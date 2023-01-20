@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SG Food Hour</title>
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../CSS/style.css">
+	<link rel="stylesheet" href="../CSS/signin.css">
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
 	<script src="../JS/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 	<div>
+		<!-- nav bar -->
 		<nav class="navbar navbar-expand-lg bg-info">
 			<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img class="logoimg" src ="Img/logodraft.jpeg"></a>
+			<a class="navbar-brand" href="#"><img class="logoimg" src ="../Img/logodraft.jpeg"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -49,16 +50,26 @@
 			</div>
 			</div>
 		</nav>
+		<!-- sign in page -->
 		<div class ="maindetails">
-			<h2>Ngee Ann Polytechnic x SG Food Hour</h2>
-			<a href="https://www.np.edu.sg/" target="_blank"><img src = "Img/NgeeAnnLogo.png"></a>
-			<h4>Welcome to SG Food Hour. With effect of 1 January 2024, new stalls are coming to Ngee Ann Poly!</h4>
-			<h4>We hope we can provide a excellent service and food for all Ngee Ann staff and student.</h4>
-			<h3>If you are the new to our website, here is a video to guide you:</h3>
-			<video width="500" height="400" controls>
-				<source src="#" type="video/mp4">
-			</video>
-		</div>
+			<form action="#" method="get" class="form"style="margin-top: 10%;">
+				<div class="imgcontainer">
+				  <img src="../Img/logodraft.jpeg" alt="Avatar" class="logoimg">
+				</div>
+				<div></div>
+				<div class="container">
+				  <label for="uname"><b>Username</b></label>
+				  <input type="text" placeholder="Enter Username" name="uname" required><br>
+			  
+				  <label for="psw"><b>Password</b></label>
+				  <input type="password" placeholder="Enter Password" name="psw" required><br>
+			  
+				  <button type="submit" class ="signinbut">Sign in</button>
+				  <label>
+					<input type="checkbox" checked="checked" name="remember"> Remember me
+				  </label>
+				</div>
+			</form>
 	</div>
 </body>
 </html>
