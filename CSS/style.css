@@ -1,8 +1,12 @@
 /* navbar image */
 .logoimg{
-    width: 10%;
-    height: 10%;
+    width: 5%;
+    height: 5%;
 }
 .maindetails{
     text-align:center;
+}
+.collab{
+    width:50%;
+    height:40%;
 }
