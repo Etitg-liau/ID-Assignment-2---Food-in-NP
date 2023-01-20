@@ -1,3 +1,11 @@
+body {
+    width:100%;
+    height:100%;
+    background-image: url('/Img/loginbg1.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
 /* navbar image */
 .logoimg{
     width: 5%;
