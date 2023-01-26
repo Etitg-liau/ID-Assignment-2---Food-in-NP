@@ -15,3 +15,8 @@ body {
 .collab{
     width: 35%;
 }
+.card{
+    float: left;
+    margin-left: 8%;
+    color:black;
+}
