@@ -11,22 +11,26 @@
 	<script src="JS/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div class = "mbody">
+	<div>
 		<nav class="navbar navbar-expand-lg bg-info">
 			<div class="container-fluid">
-			<a class="navbar-brand" href="#"><img class="logoimg" src ="Img/logodraft.jpeg"></a>
+			<a class="navbar-brand" href="index.html"><img class="logoimg" src ="Img/logodraft.jpeg"></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+				<li class="nav-item" style="margin-left: 25px;">
+					<a class="nav-link active" aria-current="page" href="HTML/signin.html">Sign in</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">User</a>
+					<a class="nav-link" href="#">Sign up</a>
 				</li>
-				<li class="nav-item dropdown">
+				<!-- <li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 					Canteens
 					</a>
@@ -36,21 +40,24 @@
 					<li><hr class="dropdown-divider"></li>
 					<li><a class="dropdown-item" href="#">Walkthrough</a></li>
 					</ul>
-				</li>
+				</li> -->
 				<!-- <li class="nav-item">
 					<a class="nav-link disabled">Disabled</a>
 				</li> -->
 				</ul>
-				<form class="d-flex" role="search">
-				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-				<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+
 			</div>
 			</div>
 		</nav>
 		<div class ="maindetails">
 			<h2>Ngee Ann Polytechnic x SG Food Hour</h2>
-			<a href="https://www.np.edu.sg/" target="_blank"><img src = "Img/NgeeAnnLogo.png" class="collab"></a>
+			<a href="https://www.np.edu.sg/" target="_blank"><img src = "Img/NgeeAnnLogo.png"></a>
+			<h4>Welcome to SG Food Hour. With effect of 1 January 2024<br> new stalls are coming to Ngee Ann Poly!</h4>
+			<h4>We hope we can provide a excellent service and food for all Ngee Ann staff and student.</h4>
+			<h3>If you are the new to our website, here is a video to guide you:</h3>
+			<video width="500" height="400" controls>
+				<source src="#" type="video/mp4">
+			</video>
 		</div>
 	</div>
 </body>
