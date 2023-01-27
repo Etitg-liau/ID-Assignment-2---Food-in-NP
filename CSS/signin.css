@@ -1,6 +1,7 @@
 body {
     background-image: url('../Img/loginbg1.jpg');
     background-repeat: no-repeat;
+    background-size:cover;
 
 }
 /* navbar image */
