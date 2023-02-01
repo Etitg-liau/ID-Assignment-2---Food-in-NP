@@ -1,0 +1,63 @@
+body {
+
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+/* navbar image */
+.logoimg{
+    width: 10%;
+    height: 10%;
+}
+
+.collab{
+    width: 35%;
+}
+.card{
+    float: left;
+    margin-top: 3%;
+    margin-left: 11%;
+    color:black;
+}
+
+/*subway*/
+section{
+    padding: 2rem 9%;
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+.home-slides .slide{
+    display: flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top:9rem;
+}
+.home-slides .slide .content{
+    flex:1 1 40rem;
+}
+.home-slides .slide .image{
+    flex:1 1 40rem;
+}
+.home-slides .slide .image img{
+    width: 100%;
+}
+.home-slides .slide .content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+.home-slides .slide .content h3{
+    color:var(--black);
+    font-size: 7rem;
+}
+.home-slides .slide .content p{
+    color:var(--light-color);
+    font-size: 2rem;
+    padding: .5rem 0;
+}
