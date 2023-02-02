@@ -10,7 +10,8 @@ body {
 }
 .maindetails{
     text-align:center;
-    color: aliceblue;
+    color: darkslateblue;
+    font-family: 'Merriweather', serif;
 }
 .collab{
     width: 35%;
