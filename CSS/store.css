@@ -1,6 +1,4 @@
 body {
-
-    background-repeat: no-repeat;
     background-size:cover;
 }
 html{
@@ -29,6 +27,22 @@ section{
     padding: 2rem 9%;
 }
 
+.btn1{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #eee;
+    background: skyblue;
+    border-radius: .5rem;
+    cursor:pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    letter-spacing: .1rem;
+}
+
 section:nth-child(even){
     background: #eee;
 }
@@ -40,10 +54,10 @@ section:nth-child(even){
     padding-top:9rem;
 }
 .home-slides .slide .content{
-    flex:1 1 40rem;
+    flex:1 1 30rem;
 }
 .home-slides .slide .image{
-    flex:1 1 40rem;
+    flex:1 1 30rem;
 }
 .home-slides .slide .image img{
     width: 100%;
