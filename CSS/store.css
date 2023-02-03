@@ -51,7 +51,8 @@ section:nth-child(even){
     align-items:center;
     flex-wrap: wrap;
     gap:2rem;
-    padding-top:9rem;
+    padding-top:3rem;
+    padding-left: 2rem;
 }
 .home-slides .slide .content{
     flex:1 1 30rem;
@@ -63,15 +64,22 @@ section:nth-child(even){
     width: 100%;
 }
 .home-slides .slide .content span{
-    color:var(--green);
+    color:green;
     font-size: 2.5rem;
 }
 .home-slides .slide .content h3{
-    color:var(--black);
+    color:black;
     font-size: 7rem;
 }
 .home-slides .slide .content p{
-    color:var(--light-color);
+    color:lightseagreen;
     font-size: 2rem;
     padding: .5rem 0;
+}
+.home-slides .slide .content .price {
+    color: goldenrod;
+}
+.maindetails .store-name{
+    background-color: antiquewhite;
+    text-align:center;
 }

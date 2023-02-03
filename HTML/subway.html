@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SG Food Hour</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../CSS/store.css">
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
@@ -52,15 +55,16 @@
 		</nav>
 		<section class ="maindetails">
 
-			<div class="home-slides">
+			<div class="swiper home-slides">
+				<div class = "store-name"><img src="../Img/makan place/subway.png"></div>
+				<div class="swiper-wrapper wrapper">
 
-				<div class="wrapper">
-
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Sandwiches</h3>
 							<p>Very very nice sandwiches... +_+</p>
+							<h5 class="price">$ 7.00 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -68,11 +72,12 @@
 						</div>
 					</div>
 
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Flatbread</h3>
 							<p>Very very Flat bread... -_-</p>
+							<h5 class="price">$ 7.50 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -80,11 +85,12 @@
 						</div>
 					</div>
 
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Wrap</h3>
 							<p>Very very rool warp... o_o</p>
+							<h5 class="price">$ 7.50 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -92,11 +98,12 @@
 						</div>
 					</div>
 
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Salad</h3>
 							<p>Very very colorful salad... #_#</p>
+							<h5 class="price">$ 6.30 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -104,11 +111,12 @@
 						</div>
 					</div>
 
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Cookies</h3>
 							<p>Very very sweat cooky... =*_*</p>
+							<h5 class="price">$ 1.20 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -116,11 +124,12 @@
 						</div>
 					</div>
 
-					<div class="slide">
+					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
 							<h3>Drinks</h3>
 							<p>Very very cool drinks... $_$</p>
+							<h5 class="price">$1.20 </h5>
 							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
@@ -128,9 +137,31 @@
 						</div>
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
 		</section>
 
 
+		 <!-- Swiper JS -->
+		 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+		 <!-- Initialize Swiper -->
+		 <script>
+		   var swiper = new Swiper(".home-slides", {
+			 cssMode: true,
+			 navigation: {
+			   nextEl: ".swiper-button-next",
+			   prevEl: ".swiper-button-prev",
+			 },
+			 pagination: {
+			   el: ".swiper-pagination",
+			 },
+			 mousewheel: true,
+			 keyboard: true,
+		   });
+		 </script>
 </body>
 </html>
