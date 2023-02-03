@@ -27,6 +27,21 @@ section{
     padding: 2rem 9%;
 }
 
+.sub-heading{
+    text-align: center;
+    color:green;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
 .btn1{
     margin-top:1rem;
     display: inline-block;
@@ -80,6 +95,23 @@ section:nth-child(even){
     color: goldenrod;
 }
 .maindetails .store-name{
-    background-color: antiquewhite;
+    background-color: yellowgreen;
     text-align:center;
+}
+
+.dish .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:1.5rem;
+}
+
+.dish .box-container .box{
+    padding:2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow:inset;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }
