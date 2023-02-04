@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SG Food Hour</title>
-
+	<!--swiper-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+	<!--icon-->
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.mins.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../CSS/store.css">
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
@@ -45,9 +46,12 @@
 					<li><a class="dropdown-item" href="#">Walkthrough</a></li>
 					</ul>
 				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
-				</li>-->
+				<!-- IMPORTANT DONT DELETE-->>
+				 <li class="nav-item">
+					<a class="nav-link" href="#">
+						<ion-icon name="basket"></ion-icon> Cart <span>0</span>
+					</a>
+				</li>
 				</ul>
 
 			</div>
@@ -65,7 +69,6 @@
 							<h3>Sandwiches</h3>
 							<p>Very very nice sandwiches... +_+</p>
 							<h5 class="price">$ 7.00 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/sandwitch.png" alt="">
@@ -78,7 +81,6 @@
 							<h3>Flatbread</h3>
 							<p>Very very Flat bread... -_-</p>
 							<h5 class="price">$ 7.50 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/flatbread.png" alt="">
@@ -89,9 +91,8 @@
 						<div class="content">
 							<span>Dish</span>
 							<h3>Wrap</h3>
-							<p>Very very rool warp... o_o</p>
+							<p>Very very rool wrap... o_o</p>
 							<h5 class="price">$ 7.50 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/wraps.png" alt="">
@@ -104,7 +105,6 @@
 							<h3>Salad</h3>
 							<p>Very very colorful salad... #_#</p>
 							<h5 class="price">$ 6.30 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/salad.png" alt="">
@@ -117,7 +117,6 @@
 							<h3>Cookies</h3>
 							<p>Very very sweat cooky... =*_*</p>
 							<h5 class="price">$ 1.20 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/cookies.png" alt="">
@@ -130,7 +129,6 @@
 							<h3>Drinks</h3>
 							<p>Very very cool drinks... $_$</p>
 							<h5 class="price">$1.20 </h5>
-							<a href="#" class="btn1">order now!</a>
 						</div>
 						<div class="image">
 							<img src="../Img/makan place/subway/drinks.png" alt="">
@@ -160,7 +158,7 @@
 						<span>⭐⭐⭐⭐</span>
 					</div>
 					<span>$7.00</span>
-					<a href="#" class="btn1">add to cart</a>
+					<a href="#" class="add-cart btn1">add to cart</a>
 				</div>
 
 				<div class="box">
@@ -172,7 +170,19 @@
 						<span>⭐⭐⭐⭐⭐</span>
 					</div>
 					<span>$7.50</span>
-					<a href="#" class="btn1">add to cart</a>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<a href="#" class="fas fa-heart"></a>
+					<a href="#" class="fas fa-eye"></a>
+					<img src="../Img/makan place/subway/wraps.png" alt="">
+					<h3>wraps</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐⭐</span>
+					</div>
+					<span>$7.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
 				</div>
 
 				<div class="box">
@@ -184,19 +194,7 @@
 						<span>⭐⭐⭐⭐</span>
 					</div>
 					<span>$6.30</span>
-					<a href="#" class="btn1">add to cart</a>
-				</div>
-
-				<div class="box">
-					<a href="#" class="fas fa-heart"></a>
-					<a href="#" class="fas fa-eye"></a>
-					<img src="../Img/makan place/subway/wraps.png" alt="">
-					<h3>wrpas</h3>
-					<div class="stars">
-						<span>⭐⭐⭐⭐⭐</span>
-					</div>
-					<span>$7.50</span>
-					<a href="#" class="btn1">add to cart</a>
+					<a href="#" class="add-cart btn1">add to cart</a>
 				</div>
 
 				<div class="box">
@@ -208,7 +206,7 @@
 						<span>⭐⭐⭐⭐⭐</span>
 					</div>
 					<span>$1.20</span>
-					<a href="#" class="btn1">add to cart</a>
+					<a href="#" class="add-cart btn1">add to cart</a>
 				</div>
 
 				<div class="box">
@@ -220,14 +218,16 @@
 						<span>⭐⭐⭐</span>
 					</div>
 					<span>$1.20</span>
-					<a href="#" class="btn1">add to cart</a>
+					<a href="#" class="add-cart btn1">add to cart</a>
 				</div>
 			</div>
 		</section>
 
 		 <!-- Swiper JS -->
 		 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
+		 <!--unpkg-->
+		 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		 <script src="../JS/store.js"></script>
 		 <!-- Initialize Swiper -->
 		 <script>
 		   var swiper = new Swiper(".home-slides", {
