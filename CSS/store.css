@@ -2,7 +2,6 @@ body {
     background-size:cover;
 }
 html{
-
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -22,7 +21,7 @@ html{
     color:black;
 }
 
-/*subway*/
+
 section{
     padding: 2rem 9%;
 }
