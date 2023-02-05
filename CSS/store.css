@@ -2,7 +2,7 @@ body {
     background-size:cover;
 }
 html{
-    overflow-x: hidden;
+
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -115,4 +115,3 @@ section:nth-child(even){
     overflow: hidden;
     text-align: center;
 }
-/* cart item */

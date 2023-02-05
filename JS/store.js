@@ -3,39 +3,39 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
     {
-        name:"sandwich",
-        tag:"subwaysw",
+        name:"Sandwich",
+        tag:"subsandwitch",
         price:7,
         inCart:0
     },
     {
-        name:"flatbread",
-        tag:"subwayfb",
+        name:"Flatbread",
+        tag:"subflatbread",
         price:7.5,
         inCart:0
     },
     {
-        name:"wraps",
-        tag:"subwaywr",
+        name:"Wraps",
+        tag:"subwraps",
         price:7.5,
         inCart:0
     },
     {
-        name:"salad",
-        tag:"subwaysa",
-        price:6.3,
+        name:"Salad",
+        tag:"subsalad",
+        price:6,
         inCart:0
     },
     {
         name:"cooky",
-        tag:"subwayco",
-        price:1.2,
+        tag:"subcookies",
+        price:1.5,
         inCart:0
     },
     {
         name:"drinks",
-        tag:"subwaydr",
-        price:1.2,
+        tag:"subdrinks",
+        price:1.5,
         inCart:0
     }
 ];
@@ -112,4 +112,47 @@ function totalCost(product){
 
 }
 
-onLoadCartNumbers()
+function displayCart(){
+    let cartItems = localStorage.getItem("productsInCart");
+    cartItems = JSON.parse(cartItems);
+    let productContainer = document.querySelector
+    (".products");
+    let cartCost = localStorage.getItem('totalCost');
+    if(cartItems && productContainer ){
+        productContainer.innerHTML = '';
+        Object.values(cartItems).map(item => {
+            productContainer.innerHTML +=  `
+            <div class="product">
+                <ion-icon name="close-circle"></ion-icon>
+                <img src="../Img/makan place/${item.tag}.png">
+                <span>${item.name}</span>
+            </div>
+            <div class="price">$${item.price}</div>
+            <div class="quantity">
+                <ion-icon class="decrease"
+                name="arrow-dropleft-circle"></ion-icon>
+                <span>${item.inCart}</span>
+                <ion-icon class="increase"
+                name="arrow-dropright-circle"></ion-icon>
+            </div>
+            <div class="total">
+                $${item.inCart * item.price}
+            </div>
+            `;
+        });
+
+        productContainer.innerHTML +=`
+        <div class="basketTotalContainer">
+            <div  class="basketTotalTitle">
+                Basket Total
+            </div>
+            <div class="basketTotal">
+                $${cartCost}
+            </div>
+    `;
+
+    }
+}
+
+onLoadCartNumbers();
+displayCart();
