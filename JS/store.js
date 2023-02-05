@@ -5,7 +5,7 @@ let products = [
     {
         name:"Sandwich",
         tag:"subsandwitch",
-        price:7,
+        price:7.0,
         inCart:0
     },
     {
@@ -23,7 +23,7 @@ let products = [
     {
         name:"Salad",
         tag:"subsalad",
-        price:6,
+        price:6.0,
         inCart:0
     },
     {
@@ -118,6 +118,7 @@ function displayCart(){
     let productContainer = document.querySelector
     (".products");
     let cartCost = localStorage.getItem('totalCost');
+    let points = parseInt(localStorage.getItem('totalCost')/5);
     if(cartItems && productContainer ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -150,8 +151,24 @@ function displayCart(){
                 $${cartCost}
             </div>
     `;
+    productContainer.innerHTML +=`
+    <div class="basketTotalContainer">
+        <div  class="basketTotalTitle">
+            Points received
+        </div>
+        <div class="basketTotal">
+            ${points}
+        </div>
+`;
 
     }
+}
+
+function payFunction(){
+    alert("Do you want to make payment");
+    alert("Your payment is successful");
+    location.reload()
+    localStorage.clear();
 }
 
 onLoadCartNumbers();

@@ -125,3 +125,20 @@ body {
 .basketTotal{
     width: 10%;
 }
+
+.paybtn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #eee;
+    background: skyblue;
+    border-radius: .3rem;
+    cursor:pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+
+}
+
+.paybtn:hover{
+    letter-spacing: .1rem;
+}
