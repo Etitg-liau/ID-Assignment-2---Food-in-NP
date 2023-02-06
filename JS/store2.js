@@ -165,7 +165,7 @@ function displayCart(){
     productContainer.innerHTML +=`
     <div class="basketTotalContainer">
         <div  class="basketTotalTitle">
-            Points received
+            Points 
         </div>
         <div class="basketTotal">
             ${points}
