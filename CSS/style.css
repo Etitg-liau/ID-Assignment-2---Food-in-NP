@@ -3,6 +3,9 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
 }
+header{
+    margin-bottom: 100px;
+}
 /* navbar image */
 .logoimg{
     width: 10%;

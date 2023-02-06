@@ -1,10 +1,7 @@
 body {
-
-    background-repeat: no-repeat;
     background-size:cover;
 }
 html{
-    overflow-x: hidden;
     scroll-padding-top: 5.5rem;
     scroll-behavior: smooth;
 }
@@ -24,9 +21,40 @@ html{
     color:black;
 }
 
-/*subway*/
+
 section{
     padding: 2rem 9%;
+}
+
+.sub-heading{
+    text-align: center;
+    color:green;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+
+.heading{
+    text-align: center;
+    color:black;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn1{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #eee;
+    background: skyblue;
+    border-radius: .5rem;
+    cursor:pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+}
+
+.btn1:hover{
+    letter-spacing: .1rem;
 }
 
 section:nth-child(even){
@@ -37,27 +65,52 @@ section:nth-child(even){
     align-items:center;
     flex-wrap: wrap;
     gap:2rem;
-    padding-top:9rem;
+    padding-top:3rem;
+    padding-left: 2rem;
 }
 .home-slides .slide .content{
-    flex:1 1 40rem;
+    flex:1 1 30rem;
 }
 .home-slides .slide .image{
-    flex:1 1 40rem;
+    flex:1 1 30rem;
 }
 .home-slides .slide .image img{
     width: 100%;
 }
 .home-slides .slide .content span{
-    color:var(--green);
+    color:green;
     font-size: 2.5rem;
 }
 .home-slides .slide .content h3{
-    color:var(--black);
+    color:black;
     font-size: 7rem;
 }
 .home-slides .slide .content p{
-    color:var(--light-color);
+    color:lightseagreen;
     font-size: 2rem;
     padding: .5rem 0;
+}
+.home-slides .slide .content .price {
+    color: goldenrod;
+}
+.maindetails .store-name{
+    background-color: yellowgreen;
+    text-align:center;
+}
+
+.dish .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
+    gap:1.5rem;
+}
+
+.dish .box-container .box{
+    padding:2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.2);
+    box-shadow:inset;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
 }

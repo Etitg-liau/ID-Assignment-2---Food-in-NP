@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    margin-right: 20px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
+body {
+    background-size:cover;
+}
+
+.logoimg{
+    width: 10%;
+    height: 10%;
+}
+
+.collab{
+    width: 35%;
+}
+.card{
+    float: left;
+    margin-top: 3%;
+    margin-left: 11%;
+    color:black;
+}
+/* cart page */
+.products-container{
+    max-width: 750px;
+    justify-content: space-around;
+    margin:0 auto;
+    margin-top: 50px;
+}
+.products-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.products-container ion-icon{
+    font-size: 25px;
+    color:blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.product-header{
+    width: 100%;
+    max-width: 750px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin:0 auto;
+}
+
+.product-title{
+    width: 40%;
+}
+
+.price{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.quantity{
+    width: 30%;
+
+    display: flex;
+    align-items: center;
+}
+
+.total{
+    width: 10%;
+
+    display: flex;
+    align-items: center;
+}
+.products{
+    width: 55%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 2px;
+
+}
+
+.products ion-icon{
+    cursor: pointer;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+    /*
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;*/
+}
+
+.products img{
+    width: 75px;
+}
+
+.basketTotalContainer{
+    display:flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 4px solid lightgrey;
+}
+
+.basketTotalTitle{
+    width: 30%;
+}
+
+.basketTotal{
+    width: 10%;
+}
+
+.paybtn{
+    margin-top:1rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: #eee;
+    background: skyblue;
+    border-radius: .3rem;
+    cursor:pointer;
+    padding: .8rem 3rem;
+    text-decoration: none;
+
+}
+
+.paybtn:hover{
+    letter-spacing: .1rem;
+}
