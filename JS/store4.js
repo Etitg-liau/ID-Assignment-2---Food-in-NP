@@ -2,39 +2,39 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
     {
-        name:"Ban Mian",
-        tag:"mknbanmian",
+        name:"Unagi Rice",
+        tag:"jpunagirice",
+        price:6.0,
+        inCart:0
+    },
+    {
+        name:"Takoyaki",
+        tag:"jptakoyaki",
         price:3.0,
         inCart:0
     },
     {
-        name:"Dumpling Noodle",
-        tag:"mknshuijiaomian",
+        name:"Su Shi",
+        tag:"jpsushiset",
+        price:4.5,
+        inCart:0
+    },
+    {
+        name:"Beef Udon",
+        tag:"jpBeef-Udon",
+        price:4.0,
+        inCart:0
+    },
+    {
+        name:"Curry Chicken",
+        tag:"jpcurrychicken",
+        price:4.5,
+        inCart:0
+    },
+    {
+        name:"Omurice",
+        tag:"jpomurice",
         price:3.5,
-        inCart:0
-    },
-    {
-        name:"Yu Pian Noodle",
-        tag:"mknyupian",
-        price:4.5,
-        inCart:0
-    },
-    {
-        name:"Fired Fish Behoon",
-        tag:"mknfishmifeng",
-        price:4.0,
-        inCart:0
-    },
-    {
-        name:"Gan Lao Mian",
-        tag:"mknganlaomian",
-        price:4.5,
-        inCart:0
-    },
-    {
-        name:"Zha Jiang Mian",
-        tag:"mknZhaJiangMian",
-        price:4.0,
         inCart:0
     }
 ];

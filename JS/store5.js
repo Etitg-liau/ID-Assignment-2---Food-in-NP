@@ -2,38 +2,38 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
     {
-        name:"Ban Mian",
-        tag:"mknbanmian",
-        price:3.0,
-        inCart:0
-    },
-    {
-        name:"Dumpling Noodle",
-        tag:"mknshuijiaomian",
-        price:3.5,
-        inCart:0
-    },
-    {
-        name:"Yu Pian Noodle",
-        tag:"mknyupian",
-        price:4.5,
-        inCart:0
-    },
-    {
-        name:"Fired Fish Behoon",
-        tag:"mknfishmifeng",
+        name:"Cheese Fries",
+        tag:"mkwcheesefries",
         price:4.0,
         inCart:0
     },
     {
-        name:"Gan Lao Mian",
-        tag:"mknganlaomian",
-        price:4.5,
+        name:"Chicken Chop",
+        tag:"mkwchickenchop",
+        price:5.0,
         inCart:0
     },
     {
-        name:"Zha Jiang Mian",
-        tag:"mknZhaJiangMian",
+        name:"Fish & Chips",
+        tag:"mkwf&c",
+        price:5.5,
+        inCart:0
+    },
+    {
+        name:"Chiecken Cutlet",
+        tag:"mkwchieckencutlet",
+        price:5.0,
+        inCart:0
+    },
+    {
+        name:"Chicken Wings",
+        tag:"mkwfriedchickenwing",
+        price:1.5,
+        inCart:0
+    },
+    {
+        name:"Pasta",
+        tag:"mkwpasta",
         price:4.0,
         inCart:0
     }

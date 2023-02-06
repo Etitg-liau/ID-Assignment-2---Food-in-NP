@@ -162,25 +162,12 @@ function displayCart(){
                 $${cartCost}
             </div>
     `;
-    productContainer.innerHTML +=`
-    <div class="basketTotalContainer">
-        <div  class="basketTotalTitle">
-            Points 
-        </div>
-        <div class="basketTotal">
-            ${points}
-        </div>
-`;
+   
 
     }
 }
 
-function payFunction(){
-    alert("Do you want to make payment");
-    alert("Your payment is successful");
-    location.reload()
-    localStorage.clear();
-}
+
 
 onLoadCartNumbers();
 displayCart();
