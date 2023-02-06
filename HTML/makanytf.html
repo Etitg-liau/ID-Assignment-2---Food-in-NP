@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SG Food Hour</title>
+	<!--swiper-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<!--icon-->
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.mins.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../CSS/store.css">
+	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
+	<script src="../JS/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+	<div>
+		<!-- nav bar -->
+		<nav class="navbar navbar-expand-lg bg-info">
+			<div class="container-fluid">
+			<a class="navbar-brand" href="../index.html"><img class="logoimg" src ="../Img/logodraft.jpeg"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<form class="d-flex" role="search">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+				<li class="nav-item" style="margin-left: 25px;">
+					<a class="nav-link active" aria-current="page" href="signin.html">User</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Redeem</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Canteens
+					</a>
+					<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="makanPlace.html">Makan Place</a></li>
+					<li><a class="dropdown-item" href="#">Food Club</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Walkthrough</a></li>
+					</ul>
+				</li>
+				<!-- IMPORTANT DONT DELETE-->
+				 <li class="nav-item">
+					<a class="nav-link" href="cart.html">
+						<ion-icon name="basket"></ion-icon> Cart <span>0</span>
+					</a>
+				</li>
+				</ul>
+
+			</div>
+			</div>
+		</nav>
+		<section class ="maindetails">
+
+			<div class="swiper home-slides">
+				<div class = "store-name"><img src="../Img/makan place/ytf.png"></div>
+				<div class="swiper-wrapper wrapper">
+
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>Dish</span>
+							<h3>Fried Wonton</h3>
+							<p>Delicious wonton</p>
+							<h5 class="price">$ 0.50 </h5>
+						</div>
+						<div class="image">
+							<img src="../Img/makan place/mkywonton.png" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>Dish</span>
+							<h3>Wu Xiang</h3>
+							<p>Very Xiang</p>
+							<h5 class="price">$ 0.50 </h5>
+						</div>
+						<div class="image">
+							<img src="../Img/makan place/mkywuxiang.png" alt="">
+						</div>
+					</div>
+
+					<div class="swiper-slide slide">
+						<div class="content">
+							<span>Dish</span>
+							<h3>BeeHoon</h3>
+							<p>good Beehoon</p>
+							<h5 class="price">$ 1.00 </h5>
+						</div>
+						<div class="image">
+							<img src="../Img/makan place/mkybeehoon.png" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+
+		</section>
+		<!--scetion 2 -->
+		<section class="dish">
+
+			<h3 class="sub-heading">Our Drinks</h3>
+			<h1 class="heading">Popular Drinks</h1>
+
+			<div class="box-container">
+
+				<div class="box">
+					<img src="../Img/makan place/mkywonton.png" alt="">
+					<h3>Wonton</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<img src="../Img/makan place/mkywuxiang.png" alt="">
+					<h3>Wu Xiang</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<img src="../Img/makan place/mkybeehoon.png" alt="">
+					<h3>Beehoon</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐</span>
+					</div>
+					<span>$1.00</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<img src="../Img/makan place/mkybaicai.png" alt="">
+					<h3>Bai Cai</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<img src="../Img/makan place/mkybanmian.png" alt="">
+					<h3>Ban Mian</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐⭐</span>
+					</div>
+					<span>$1.00</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+				<div class="box">
+					<img src="../Img/makan place/mkyegg.png" alt="">
+					<h3>Egg</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+                <div class="box">
+					<img src="../Img/makan place/mkyseaweed.png" alt="">
+					<h3>SeaWeed</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+                <div class="box">
+					<img src="../Img/makan place/mkyTofu.png" alt="">
+					<h3>Tofu</h3>
+					<div class="stars">
+						<span>⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+                <div class="box">
+					<img src="../Img/makan place/mkytomato.png" alt="">
+					<h3>Tomato</h3>
+					<div class="stars">
+						<span>⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+
+                <div class="box">
+					<img src="../Img/makan place/mkyXIAOBAICAI.png" alt="">
+					<h3>Xiao Bai Cai</h3>
+					<div class="stars">
+						<span>⭐⭐⭐⭐</span>
+					</div>
+					<span>$0.50</span>
+					<a href="#" class="add-cart btn1">add to cart</a>
+				</div>
+               
+			</div>
+
+		</section>
+		 <script src="../JS/product.js"></script>
+		 <!-- Swiper JS -->
+		 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		 <!--unpkg-->
+		 <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		 <script src="../JS/store6.js"></script>
+		 <!-- Initialize Swiper -->
+		 <script>
+		   var swiper = new Swiper(".home-slides", {
+			 cssMode: true,
+			 navigation: {
+			   nextEl: ".swiper-button-next",
+			   prevEl: ".swiper-button-prev",
+			 },
+			 pagination: {
+			   el: ".swiper-pagination",
+			 },
+			 mousewheel: true,
+			 keyboard: true,
+		   });
+		 </script>
+</body>
+</html>
