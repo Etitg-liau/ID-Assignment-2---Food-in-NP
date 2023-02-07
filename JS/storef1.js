@@ -14,15 +14,15 @@ let products = [
         inCart:0
     },
     {
-        name:"Fish & Chips",
-        tag:"mkwf&c",
-        price:5.5,
+        name:"Ice Cream",
+        tag:"cdicecream",
+        price:2.8,
         inCart:0
     },
     {
-        name:"Pasta",
-        tag:"mkwpasta",
-        price:4.0,
+        name:"Cup Corn",
+        tag:"cdCupCorn",
+        price:1.0,
         inCart:0
     }
 ];
@@ -112,7 +112,7 @@ function displayCart(){
             productContainer.innerHTML +=  `
             <div class="product">
                 <ion-icon name="close-circle"></ion-icon>
-                <img src="../Img/foodclub/${item.tag}.png">
+                <img src="../Img/makan place/${item.tag}.png">
                 <span>${item.name}</span>
             </div>
             <div class="price">$${item.price}</div>
