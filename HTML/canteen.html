@@ -5,55 +5,67 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>SG Food Hour</title>
+	<!--icon-->
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.mins.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="../CSS/style.css">
 	<link rel="stylesheet" href="../CSS/bootstrap.min.css">
 	<script src="../JS/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div>
-		<!-- nav bar -->
-		<nav class="navbar navbar-expand-lg bg-info">
-			<div class="container-fluid">
-			<a class="navbar-brand" href="../index.html"><img class="logoimg" src ="../Img/logodraft.jpeg"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="../Img/logodraft.jpeg" class="logoimg"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
-				<li class="nav-item" style="margin-left: 25px;">
-					<a class="nav-link active" aria-current="page" href="signin.html">User</a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Redeem</a>
+				  <a class="nav-link" href="#">Exchange Points</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Canteens
+				<li class="nav-item">
+					<a class="nav-link" href="cart.html">
+						<ion-icon name="basket"></ion-icon> Cart <span>0</span>
 					</a>
-					<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="#">Makan Place</a></li>
-					<li><a class="dropdown-item" href="#">Food Club</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">Walkthrough</a></li>
-					</ul>
 				</li>
-				<!-- <li class="nav-item">
-					<a class="nav-link disabled">Disabled</a>
-				</li>-->
-				</ul>
-
+			  </ul>  
+				<ul class="navbar-nav justify-content-end">
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Canteens</a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../HTML/makanPlace.html">Makan Place</a></li>
+			<li><a class="dropdown-item" href="../HTML/foodclub.html">Food Club</a></li>
+			<li><a class="dropdown-item" href="#">Coming Soon...</a></li>
+		  </ul>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="../HTML/signin.html">Sign In</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Sign Up</a>
+		</li>
+	  </ul> 
+			  <form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			  </form>
 			</div>
-			</div>
+		  </div>
 		</nav>
+	</header>
+	<div>
 		<div class ="maindetails">
 			<h2>Let's get started! Choose your Canteen:</h2><br>
             <a href="../HTML/foodclub.html"><img src="../Img/foodclub.jpg" style="height: 80%;width: 40%; margin-right: 2%;"></a>
             <a href="../HTML/makanPlace.html"><img src="../Img/makan place.jpg" style="height: 80%;width: 40%;"></a>
 	    </div>
 </body>
+<script src="../JS/store.js"></script>
+	<!--unpkg-->
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </html>
