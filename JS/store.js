@@ -110,7 +110,7 @@ function totalCost(product){
 
 
     if(cartCost != null){
-        cartCost =parseFloat(cartCost);
+        cartCost = parseFloat(cartCost);
         localStorage.setItem("totalCost",cartCost + product.price);
     }else{
         localStorage.setItem("totalCost",product.price);
@@ -123,8 +123,8 @@ function displayCart(){
     cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector
     (".products");
-    let cartCost = localStorage.getItem('totalCost');
-    let points = parseInt(localStorage.getItem('totalCost')/5);
+    let cartCost = parseFloat(localStorage.getItem('totalCost'));
+    let points = parseFloat(localStorage.getItem('totalCost')/2);
     if(cartItems && productContainer ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -154,7 +154,7 @@ function displayCart(){
                 Basket Total
             </div>
             <div class="basketTotal">
-                $${cartCost}
+                $${parseFloat(cartCost).toFixed(2)}
             </div>
     `;
     productContainer.innerHTML +=`
@@ -163,7 +163,7 @@ function displayCart(){
             Points
         </div>
         <div class="basketTotal">
-            ${points}
+            ${parseFloat(points).toFixed(1)}
         </div>
 `;
 
