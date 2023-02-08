@@ -53,3 +53,9 @@ form {
       float: none;
     }
   }
+  @media(max-width:415px){
+    form{
+        font-size: 8px;
+    }
+
+  }

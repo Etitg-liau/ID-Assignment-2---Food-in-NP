@@ -118,3 +118,12 @@ section:nth-child(even){
     overflow: hidden;
     text-align: center;
 }
+
+@media(max-width:415px){
+    content{
+      font-size: 8px;
+    }
+    swiper-slide slide p{
+        font-size: 8px;
+    }
+  }
