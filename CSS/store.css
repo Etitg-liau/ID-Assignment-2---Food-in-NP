@@ -105,7 +105,7 @@ section:nth-child(even){
 .dish .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
-    gap:1.5rem;
+    gap:1rem;
 }
 
 .dish .box-container .box{
@@ -123,7 +123,15 @@ section:nth-child(even){
     content{
       font-size: 8px;
     }
-    swiper-slide slide p{
-        font-size: 8px;
+    .dish .box-container{
+        grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+    }
+    .btn1{
+        font-size: 1rem;
+        padding: .8rem 3rem;
+    }
+    .box img{
+        width: 50%;
+        height: 50%;
     }
   }
