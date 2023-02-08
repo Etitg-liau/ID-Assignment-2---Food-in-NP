@@ -79,7 +79,8 @@ section:nth-child(even){
     flex:1 1 30rem;
 }
 .home-slides .slide .image img{
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 .home-slides .slide .content span{
     color:green;
@@ -120,9 +121,7 @@ section:nth-child(even){
 }
 
 @media(max-width:415px){
-    content{
-      font-size: 8px;
-    }
+
     .dish .box-container{
         grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
     }

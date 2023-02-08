@@ -45,7 +45,9 @@ form {
   .container {
     padding: 16px;
   }
-  
+  .animation{
+    margin-left: 35%;
+  }
   /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
@@ -54,6 +56,19 @@ form {
     }
   }
   @media(max-width:415px){
+    .maindetails{
+      margin-left: 35%;
+      margin-right: 30%;
+  }
+    .signinbut {
+      margin-left: 5%;
+    }
+    
+    #myDIV{
+      margin-left: 4%;
+      height: 50%;
+      width: 50%;
+    }
     form{
         font-size: 8px;
     }
