@@ -12,6 +12,7 @@
 	<script src="../JS/jquery-3.6.3.min.js"></script>
 	<script src="../JS/restdb.js"></script>
 	<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+	<script src="../JS/signin.js" defer></script>
 </head>
 <body>
 	<header>
@@ -51,25 +52,26 @@
 			<h3>SG FOOD HOUR</h3>
 		  </div>
 		<div class ="maindetails">
-			<form action="canteen.html" method="get" class="form"style="margin-top: 5%;">
-				<div class="container">
+			<div class="container">
+			<form>
 				  <label for="uname"><b>Username</b></label>
-				  <input type="text" placeholder="Enter Username" name="uname" required><br>
+				  <input type="text" placeholder="Enter Username" id="usname" required><br>
 			  
 				  <label for="psw"><b>Password</b></label>
-				  <input type="password" placeholder="Enter Password" name="psw" required><br>
+				  <input type="password" placeholder="Enter Password" id="pwd" required><br>
 			  
-				  <button input onclick="myFunction()" type="submit" class ="signinbut">Sign in</button>
+				  <button type="button" class="signinbut">Sign in</button>
 
 				  <label style="margin-left:7px ;">
-					<input type="checkbox" checked="checked" name="remember"> Remember me
+					<input type="checkbox" checked="checked" id="rmb"> Remember me
 				  </label>
+				  <div class="status"></div>
 				  <div class="animation">
 					<lottie-player src="https://assets4.lottiefiles.com/packages/lf20_a2chheio.json" background="transparent"
 					  speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
 					</div>
-				</div>
 			</form>
+		</div>
 	</div>
 	<script src="../JS/product.js"></script>
 </body>
