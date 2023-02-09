@@ -1,3 +1,4 @@
+var resp;
 function signin()
 {
   var settings = 
@@ -9,12 +10,12 @@ function signin()
     "headers": 
     {
       "content-type": "application/json",
-      "x-apikey": "<your CORS apikey here>",
+      "x-apikey": "63e45ae9478852088da67ef5",
       "cache-control": "no-cache"
     }
   }
   $.ajax(settings).done(function (response) {
-    console.log(response);
+    resp = reponse;
   });
 }
 function signindata()
@@ -28,7 +29,7 @@ function signindata()
     "headers": 
     {
       "content-type": "application/json",
-      "x-apikey": "<your CORS apikey here>",
+      "x-apikey": "63e45ae9478852088da67ef5",
       "cache-control": "no-cache"
     },
     "processData": false,
@@ -36,6 +37,6 @@ function signindata()
   }
 
 $.ajax(settings).done(function (response) {
-  console.log(response);
+  resp = response;
 });
 }
