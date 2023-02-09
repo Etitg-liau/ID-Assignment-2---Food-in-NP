@@ -10,7 +10,11 @@ html{
     width: 10%;
     height: 10%;
 }
-
+.store-name img{
+    margin-top: 4%;
+    width: 280px;
+    height: 150px;
+}
 .collab{
     width: 35%;
 }
@@ -75,7 +79,8 @@ section:nth-child(even){
     flex:1 1 30rem;
 }
 .home-slides .slide .image img{
-    width: 100%;
+    width: 80%;
+    height: 80%;
 }
 .home-slides .slide .content span{
     color:green;
@@ -101,7 +106,7 @@ section:nth-child(even){
 .dish .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(28rem,1fr));
-    gap:1.5rem;
+    gap:1rem;
 }
 
 .dish .box-container .box{
@@ -114,3 +119,18 @@ section:nth-child(even){
     overflow: hidden;
     text-align: center;
 }
+
+@media(max-width:415px){
+
+    .dish .box-container{
+        grid-template-columns: repeat(auto-fit,minmax(14rem,1fr));
+    }
+    .btn1{
+        font-size: 1rem;
+        padding: .8rem 3rem;
+    }
+    .box img{
+        width: 50%;
+        height: 50%;
+    }
+  }

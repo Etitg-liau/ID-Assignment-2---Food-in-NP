@@ -26,7 +26,6 @@ let products = [
         inCart:0
     }
 ];
-
 for(let i = 0; i< carts.length; i++){
     carts[i].addEventListener('click',() =>{
         cartNumbers(products[i]);
@@ -91,7 +90,7 @@ function totalCost(product){
 
 
     if(cartCost != null){
-        cartCost =parseFloat(cartCost);
+        cartCost = parseFloat(cartCost);
         localStorage.setItem("totalCost",cartCost + product.price);
     }else{
         localStorage.setItem("totalCost",product.price);
@@ -105,7 +104,6 @@ function displayCart(){
     let productContainer = document.querySelector
     (".products");
     let cartCost = localStorage.getItem('totalCost');
-    let points = parseInt(localStorage.getItem('totalCost')/5);
     if(cartItems && productContainer ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {

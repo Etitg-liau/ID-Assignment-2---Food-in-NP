@@ -2,55 +2,30 @@ let carts = document.querySelectorAll(".add-cart");
 
 let products = [
     {
-        name:"Coca Cola",
-        tag:"makancola",
-        price:2.0,
+        name:"Steam Chicken-Rice",
+        tag:"crbchickenrice",
+        price:2.8,
         inCart:0
     },
     {
-        name:"100 PLUS",
-        tag:"makan100plus",
-        price:1.5,
+        name:"Roasted Chicken-Rice",
+        tag:"cdwaffles",
+        price:2.8,
         inCart:0
     },
     {
-        name:"Bandung",
-        tag:"makanbandung",
-        price:1.5,
+        name:"Lemon Chicken-Rice",
+        tag:"crlemoncr",
+        price:3.3,
         inCart:0
     },
     {
-        name:"Ice Chocolate Latte",
-        tag:"makanchocolate latte",
-        price:2.5,
-        inCart:0
-    },
-    {
-        name:"Coffee",
-        tag:"makancoffee",
-        price:2.0,
-        inCart:0
-    },
-    {
-        name:"Ice Lemon Tea",
-        tag:"makanlemontea",
-        price:1.5,
-        inCart:0
-    },
-    {
-        name:"Tea",
-        tag:"makantea",
-        price:1.5,
-        inCart:0
-    },
-    {
-        name:"Water",
-        tag:"makanwater",
-        price:1.0,
+        name:"Egg",
+        tag:"crLudan",
+        price:0.8,
         inCart:0
     }
 ];
-
 for(let i = 0; i< carts.length; i++){
     carts[i].addEventListener('click',() =>{
         cartNumbers(products[i]);

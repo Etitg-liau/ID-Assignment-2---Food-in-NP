@@ -15,48 +15,52 @@
 	<script src="../JS/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-	<div>
-		<!-- nav bar -->
-		<nav class="navbar navbar-expand-lg bg-info">
-			<div class="container-fluid">
-			<a class="navbar-brand" href="../index.html"><img class="logoimg" src ="../Img/logodraft.jpeg"></a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		  <div class="container-fluid">
+			<a class="navbar-brand" href="../index.html"><img src="../Img/logodraft.jpeg" class="logoimg"></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-				<form class="d-flex" role="search">
-					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
-				<li class="nav-item" style="margin-left: 25px;">
-					<a class="nav-link active" aria-current="page" href="signin.html">User</a>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Redeem</a>
+				  <a class="nav-link" href="../HTML/points.html">Exchange Points</a>
 				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-					Canteens
-					</a>
-					<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="makanPlace.html">Makan Place</a></li>
-					<li><a class="dropdown-item" href="#">Food Club</a></li>
-					<li><hr class="dropdown-divider"></li>
-					<li><a class="dropdown-item" href="#">Walkthrough</a></li>
-					</ul>
-				</li>
-				<!-- IMPORTANT DONT DELETE-->
-				 <li class="nav-item">
+				<li class="nav-item">
 					<a class="nav-link" href="cart.html">
 						<ion-icon name="basket"></ion-icon> Cart <span>0</span>
 					</a>
 				</li>
-				</ul>
-
+			  </ul>  
+				<ul class="navbar-nav justify-content-end">
+		<li class="nav-item dropdown">
+		  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Canteens</a>
+		  <ul class="dropdown-menu">
+			<li><a class="dropdown-item" href="../HTML/makanPlace.html">Makan Place</a></li>
+			<li><a class="dropdown-item" href="../HTML/foodclub.html">Food Club</a></li>
+			<li><a class="dropdown-item" href="../HTML/comingsoon.html">Coming Soon...</a></li>
+		  </ul>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="../HTML/signin.html">Sign In</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Sign Up</a>
+		</li>
+	  </ul> 
+			  <form class="d-flex" role="search">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			  </form>
 			</div>
-			</div>
+		  </div>
 		</nav>
+	</header>
+	<div>
 		<section class ="maindetails">
 
 			<div class="swiper home-slides">
@@ -66,7 +70,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Sandwiches</h3>
+							<h3 style="font-size:5vw">Sandwiches</h3>
 							<p>Very very nice sandwiches... +_+</p>
 							<h5 class="price">$ 7.00 </h5>
 						</div>
@@ -78,7 +82,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Flatbread</h3>
+							<h3 style="font-size:5vw">Flatbread</h3>
 							<p>Very very Flat bread... -_-</p>
 							<h5 class="price">$ 7.50 </h5>
 						</div>
@@ -90,7 +94,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Wrap</h3>
+							<h3 style="font-size:5vw">Wrap</h3>
 							<p>Very very rool wrap... o_o</p>
 							<h5 class="price">$ 7.50 </h5>
 						</div>
@@ -102,7 +106,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Salad</h3>
+							<h3 style="font-size:5vw">Salad</h3>
 							<p>Very very colorful salad... #_#</p>
 							<h5 class="price">$ 6.00 </h5>
 						</div>
@@ -114,7 +118,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Cookies</h3>
+							<h3 style="font-size:5vw">Cookies</h3>
 							<p>Very very sweat cooky... =*_*</p>
 							<h5 class="price">$ 1.50 </h5>
 						</div>
@@ -126,7 +130,7 @@
 					<div class="swiper-slide slide">
 						<div class="content">
 							<span>Dish</span>
-							<h3>Drinks</h3>
+							<h3 style="font-size:5vw">Drinks</h3>
 							<p>Very very cool drinks... $_$</p>
 							<h5 class="price">$1.50 </h5>
 						</div>
