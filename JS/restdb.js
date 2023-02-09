@@ -13,11 +13,10 @@ function signin()
       "cache-control": "no-cache"
     }
   }
-}
-  
   $.ajax(settings).done(function (response) {
     console.log(response);
   });
+}
 function signindata()
 {
   var settings =
