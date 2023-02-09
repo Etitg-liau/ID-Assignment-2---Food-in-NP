@@ -46,9 +46,6 @@ form {
   .container {
     padding: 16px;
   }
-  .animation{
-    margin-left: 35%;
-  }
   .loader {
     position: fixed;
     top: 0;
