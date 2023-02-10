@@ -14,13 +14,13 @@ let products = [
         inCart:0
     },
     {
-        name:"Yu Pian Noodle",
+        name:"Sliced Fish Bee Hoon",
         tag:"mknyupian",
         price:4.5,
         inCart:0
     },
     {
-        name:"Fired Fish Behoon",
+        name:"Fried Fish Bee Hoon",
         tag:"mknfishmifeng",
         price:4.0,
         inCart:0
