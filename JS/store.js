@@ -164,20 +164,28 @@ function displayCart(){
             ${parseFloat(getpoints).toFixed(1)}
         </div>
 `;
-let newpoint = parseFloat(localStorage.getItem('points'));
-newpoint+=parseFloat(getpoints);
-localStorage.setItem('points',newpoint)
     }
 }
 function payFunction(){
+    let costss = parseFloat(localStorage.getItem('totalCost'));
+    alert(costss)
+    if(costss > 0){
+    let newpoint = parseFloat(localStorage.getItem('points'));
+    var rpoints = (costss/2).toFixed(2);
+    newpoint+= parseFloat(rpoints);
+    localStorage.setItem('points',newpoint)
     alert("Do you want to make payment");
     alert("Your payment is successful");
-
+    alert("Please collect your food on time.");
     location.reload()
     localStorage.removeItem('productsInCart')
     localStorage.removeItem('totalCost')
     localStorage.removeItem('cartNumbers')
-
+    }
+    else
+    {
+        alert("You cart is empty.")
+    }
 }
 
 onLoadCartNumbers();
