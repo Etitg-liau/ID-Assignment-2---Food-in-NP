@@ -1,34 +1,41 @@
 let b = $("#signupbutton");
 let su = $(".sustatus");
+var signinlist;
 signin();
-/*function waitforsignin(){
+function waitforsignin(){
     if (resp != undefined){
-        let signinlist = resp;
+        signinlist = resp;
     }
     else{
         setTimeout(waitforsignin,5000);
     }
 }
 waitforsignin();
-*/
+
 b.click(()=>{
     let username = $("#signupUsername").val();
     let address = $("#signupAddress").val();
     let password = $("#signupPwd").val();
     let cpassword = $("#signupcPwd").val();
-    /*for (let x = 0; x < signinlist.length; x++){
+    for (let x = 0; x < signinlist.length; x++){
         if (signinlist[x].username == username){
             su.html("<p>Username has been taken. Please enter another username.</p>");
             return; 
         }
-    }*/
+    }
     if (password != cpassword){
         su.html("<p>Passwords do not match. Please make sure both passwords match.</p>");
         return;
     }
     signindata({"username": username, "address": address, "password": cpassword, "points": 0});
     su.html("<p>Successful creation.</p>");
+    delaybeforeredirect();
+    window.location.href = "signin.html";
 });
+
+function delaybeforeredirect(){
+    setTimeout(b,100)
+}
 
 
 function setFormMessage(formElement, type, message) {
@@ -68,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loginForm.addEventListener("submit", e => {
         e.preventDefault();
 
-        // Perform your AJAX/Fetch login
+
 
         setFormMessage(loginForm, "error", "Invalid username/password combination");
     });
