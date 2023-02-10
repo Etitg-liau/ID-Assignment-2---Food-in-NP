@@ -1,6 +1,7 @@
 signin();
 var loginlist;
 var statuss = $(".status");
+var tuser = $(".sub-heading");
 function getsignin(){
     if (resp !== undefined) {
         loginlist = resp;
@@ -9,16 +10,22 @@ function getsignin(){
         setTimeout(getsignin, 100);
     }
 }
+var uname ="";
+var points="";
 getsignin();
 $(".signinbut").click(() =>{
     $(".animation").show();
     var signedin = false;
     var finalhtml = "";
+    var userinfo="";
     var username = $("#usname").val();
     var password = $("#pwd").val();
     for (let i = 0; i < loginlist.length; i++) {
         if (loginlist[i].username == username) {
             console.log("Correct username");
+            localStorage.setItem("uname",username);
+            localStorage.setItem("points",parseFloat(loginlist[i].points));
+            userinfo+=`<p>User Name: ${uname}<br> Points: ${points}</p>`
             if (loginlist[i].password == password) {
                 finalhtml += "<p>Correct password, successful login.</p>";
                 signedin = true;
@@ -44,3 +51,8 @@ $(".signinbut").click(() =>{
     setTimeout(hideanim, 2000);
 })
 $(".animation").hide();
+function displayinfo(){
+    tuser.html(userinfo);
+}
+displayinfo();
+
