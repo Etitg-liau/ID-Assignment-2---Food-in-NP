@@ -173,6 +173,22 @@ function payFunction(){
     var rpoints = (costss/2).toFixed(2);
     newpoint+= parseFloat(rpoints);
     localStorage.setItem('points',newpoint)
+    signin()
+    function waiforsignin(){
+        if (resp !== undefined) {
+            for(let x =0;x<resp.length;x++){
+                if(resp[x].username == localStorage.getItem('uname')){
+                    resp[x].points = newpoints;
+                    break;
+                }
+            }
+            updatedocument(resp);
+        }
+        else {
+            setTimeout(waiforsignin, 100);
+        }
+    }
+    waiforsignin();
     alert("Do you want to make payment");
     alert("Your payment is successful");
     alert("Please collect your food on time.");
