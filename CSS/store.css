@@ -94,6 +94,7 @@ section:nth-child(even){
     color:lightseagreen;
     font-size: 2rem;
     padding: .5rem 0;
+    font-family: 'Questrial', sans-serif;
 }
 .home-slides .slide .content .price {
     color: goldenrod;

@@ -16,6 +16,10 @@ header{
     color: darkslateblue;
     font-family: 'Merriweather', serif;
 }
+.vid{
+  color:rgb(2, 42, 2);
+  font-family: 'Questrial', sans-serif;
+}
 /* Welcome Message */
 .wmessage{
     border:7px ridge gold;
