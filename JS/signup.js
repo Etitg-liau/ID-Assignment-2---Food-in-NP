@@ -23,18 +23,18 @@ b.click(()=>{
             return; 
         }
     }
+    
     if (password != cpassword){
         su.html("<p>Passwords do not match. Please make sure both passwords match.</p>");
         return;
     }
     signindata({"username": username, "address": address, "password": cpassword, "points": 0});
     su.html("<p>Successful creation.</p>");
-    delaybeforeredirect();
-    window.location.href = "signin.html";
+    setTimeout(delaybeforeredirect, 5000)
 });
 
 function delaybeforeredirect(){
-    setTimeout(b,100)
+    window.location.href = "signin.html";
 }
 
 
