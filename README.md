@@ -13,8 +13,13 @@ sg food hour and can exchange for rewards.
 
 ## Features
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
+- Signup Page
+- Signin Page
+- Display food and details of food from each stalls
+- Adding items to cart
+- Checkout
+- Adding Points/ Displaying Points
+- Redeem gifts with points
 ## Technologies Used
 
 -[adobeXD](https://helpx.adobe.com/sg/support/xd.html)
@@ -40,14 +45,13 @@ In this section, you should go over the different parts of your project, and des
 
 test in chorme and wirefox
 
-## Credits
-
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
 ### Media
 - The photos used in this site were obtained from ...
 
 ### Acknowledgements
 
-- I received inspiration for this project from X
+- I received inspiration https://www.youtube.com/watch?v=MJUssi2c6Ls for store page, https://www.youtube.com/watch?v=IY5UN82FZ2Q&list=PLD9SRxG6ST3HignjcXUX6w8RcT0_b5ihV&index=7 for cart page.
+- https://www.youtube.com/watch?v=3GsKEtBcGTk for signup page
+
+
