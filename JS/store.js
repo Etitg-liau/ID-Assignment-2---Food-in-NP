@@ -107,8 +107,6 @@ function setItems(product){
 
 function totalCost(product){
     let cartCost = localStorage.getItem('totalCost');
-
-
     if(cartCost != null){
         cartCost = parseFloat(cartCost);
         localStorage.setItem("totalCost",cartCost + product.price);
@@ -124,7 +122,7 @@ function displayCart(){
     let productContainer = document.querySelector
     (".products");
     let cartCost = parseFloat(localStorage.getItem('totalCost'));
-    let points = parseFloat(localStorage.getItem('totalCost')/2);
+    let getpoints = parseFloat(localStorage.getItem('totalCost')/2);
     if(cartItems && productContainer ){
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -163,7 +161,7 @@ function displayCart(){
             Points
         </div>
         <div class="basketTotal">
-            ${parseFloat(points).toFixed(1)}
+            ${parseFloat(getpoints).toFixed(1)}
         </div>
 `;
 
@@ -174,7 +172,10 @@ function payFunction(){
     alert("Do you want to make payment");
     alert("Your payment is successful");
     location.reload()
-    localStorage.clear();
+    localStorage.removeItem('productsInCart')
+    localStorage.removeItem('totalCost')
+    localStorage.removeItem('cartNumbers')
+    localStorage.setItem('points',points+parseFloat(cartCost).toFixed(2))
 }
 
 onLoadCartNumbers();
