@@ -1,4 +1,4 @@
-let carts = document.querySelectorAll(".add-cart");
+/*let carts = document.querySelectorAll(".add-cart");
 
 let award = [
     {
@@ -40,4 +40,24 @@ function totalCost(award){
         localStorage.setItem("totalCost",product.price);
     }
 
+}*/
+
+function displayinfo() {
+    let productContainer = document.querySelector
+    (".sub-heading");
+    productContainer.innerHTML = '';
+    //var duser = $(".sub-heading");
+    let name1 =localStorage.getItem('uname');
+    let point1 = localStorage.getItem('points');
+    ///var userinfo ="";
+    //userinfo+=`<h3>User: ${name1} <br> Points: ${point1}</h3>`
+    //duser.html(userinfo);
+    productContainer.innerHTML +=`
+            <div class="sub-heading">
+                <h3>User: ${name1}</h3>
+                <h3>Points: ${point1}
+            </div>`;
+    console.log(productContainer.innerHTML);
 }
+
+displayinfo();
