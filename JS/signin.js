@@ -32,6 +32,7 @@ $(".signinbut").click(() =>{
     }
     if (signedin) {
         finalhtml += "<p>Signed in</p>";
+        window.location.href = "../HTML/canteen.html";
     }
     else {
         finalhtml += "<p>Not signed in</p>";
