@@ -164,6 +164,9 @@ function displayCart(){
             ${parseFloat(getpoints).toFixed(1)}
         </div>
 `;
+let newpoint = parseFloat(localStorage.getItem('points'));
+newpoint+=parseFloat(getpoints);
+localStorage.setItem('points',newpoint)
 
     }
 }
@@ -175,7 +178,7 @@ function payFunction(){
     localStorage.removeItem('productsInCart')
     localStorage.removeItem('totalCost')
     localStorage.removeItem('cartNumbers')
-    localStorage.setItem('points',points+parseFloat(cartCost).toFixed(2))
+
 }
 
 onLoadCartNumbers();

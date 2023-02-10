@@ -10,7 +10,7 @@ function getsignin(){
     }
 }
 var uname ="";
-var points="";
+const points="";
 getsignin();
 $(".signinbut").click(() =>{
     $(".animation").show();
