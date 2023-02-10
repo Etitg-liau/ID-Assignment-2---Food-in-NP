@@ -28,7 +28,7 @@ let products = [
     {
         name:"Coffee",
         tag:"makancoffee",
-        price:2.0,
+        price:2.00,
         inCart:0
     },
     {

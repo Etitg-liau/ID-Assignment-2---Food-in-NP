@@ -103,7 +103,7 @@ function displayinfo() {
     productContainer.innerHTML +=`
             <div class="sub-heading">
                 <h3>User: ${name1}</h3>
-                <h3>Points: ${point1}
+                <h3>Points: ${parseFloat(point1).toFixed(2)}
             </div>`;
     console.log(productContainer.innerHTML);
 }
