@@ -167,13 +167,12 @@ function displayCart(){
 let newpoint = parseFloat(localStorage.getItem('points'));
 newpoint+=parseFloat(getpoints);
 localStorage.setItem('points',newpoint)
-
     }
 }
-
 function payFunction(){
     alert("Do you want to make payment");
     alert("Your payment is successful");
+
     location.reload()
     localStorage.removeItem('productsInCart')
     localStorage.removeItem('totalCost')

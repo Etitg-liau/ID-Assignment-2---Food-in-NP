@@ -41,6 +41,54 @@ function totalCost(award){
     }
 
 }*/
+function award1(){
+    let dpoints1 = parseFloat(localStorage.getItem('points'));
+    if(dpoints1>=40){
+    dpoints1-=40;
+    alert("Your award will send to your address in 7 working days.");
+    alert("Thank you for uisng sg food hour.");
+    location.reload()
+    localStorage.setItem('points',dpoints1);
+    }
+    else
+    {    alert("You do not have enough points for this award.");}
+}
+function award2(){
+    let dpoints1 = parseFloat(localStorage.getItem('points'));
+    if(dpoints1>=20){
+    dpoints1-=20;
+    alert("Your award will send to your address in 7 working days.");
+    alert("Thank you for uisng sg food hour.");
+    location.reload()
+    localStorage.setItem('points',dpoints1);
+    }
+    else
+    {    alert("You do not have enough points for this award.");}
+}
+function award3(){
+    let dpoints1 = parseFloat(localStorage.getItem('points'));
+    if(dpoints1>=80){
+    dpoints1-=80;
+    alert("Your award will send to your address in 7 working days.");
+    alert("Thank you for uisng sg food hour.");
+    location.reload()
+    localStorage.setItem('points',dpoints1);
+    }
+    else
+    {    alert("You do not have enough points for this award.");}
+}
+function award4(){
+    let dpoints1 = parseFloat(localStorage.getItem('points'));
+    if(dpoints1>=15){
+    dpoints1-=15;
+    alert("Your award will send to your address in 7 working days.");
+    alert("Thank you for uisng sg food hour.");
+    location.reload()
+    localStorage.setItem('points',dpoints1);
+    }
+    else
+    {    alert("You do not have enough points for this award.");}
+}
 
 function displayinfo() {
     let productContainer = document.querySelector
