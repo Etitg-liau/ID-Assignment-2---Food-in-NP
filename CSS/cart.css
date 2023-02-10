@@ -178,3 +178,22 @@ body {
       transform: rotate(1turn);
     }
   }
+  @media(max-width:415px){
+    .products-container{
+        padding-top: 25%;
+    }
+    .product-header h5{
+        font-size: smaller;
+    }
+    .products img{
+        height: 10%;
+        width: 10%;
+    }
+    .products ion-icon{
+        height: 10%;
+        width: 10%;
+    }
+    .products span{
+        font-size: 5px;
+    }
+  }

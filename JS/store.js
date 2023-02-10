@@ -168,7 +168,6 @@ function displayCart(){
 }
 function payFunction(){
     let costss = parseFloat(localStorage.getItem('totalCost'));
-    alert(costss)
     if(costss > 0){
     let newpoint = parseFloat(localStorage.getItem('points'));
     var rpoints = (costss/2).toFixed(2);

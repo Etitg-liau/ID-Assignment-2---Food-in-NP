@@ -169,4 +169,10 @@ section:nth-child(even){
         width: 50%;
         height: 50%;
     }
+    .maindetails{
+        padding-top: 25%;
+    }
+    .dish{
+        padding-top: 20%;
+    }
   }
